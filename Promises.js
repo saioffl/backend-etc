@@ -1,25 +1,17 @@
 // Clean ur Ass
 // Wipe it 
 // Flush it 
+// Use Promise !
 
 
+const cleanAss = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Cleaned ASS !!")
+        }, 3000)
+        resolve() ;
 
-
-cleanAss = () => {
-    setTimeout(() => {
-        console.log("Cleaned bleh !!")
-    }, 2000);
+    })
 }
 
 cleanAss()
-
-
-wipeAss = () =>{
-    setTimeout(() => {
-        console.log("Wiped ahh !!")
-    }, 1000);
-}
-
-wipeAss()
-
-console.log("Blehhh")
