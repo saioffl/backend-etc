@@ -8,7 +8,18 @@
 cleanAss = () => {
     setTimeout(() => {
         console.log("Cleaned bleh !!")
-    }, 1000);
+    }, 2000);
 }
 
 cleanAss()
+
+
+wipeAss = () =>{
+    setTimeout(() => {
+        console.log("Wiped ahh !!")
+    }, 1000);
+}
+
+wipeAss()
+
+console.log("Blehhh")
