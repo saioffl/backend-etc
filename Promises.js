@@ -15,6 +15,3 @@ const cleanAss = () => {
 }
 
 cleanAss()
-
-
-
