@@ -6,16 +6,18 @@ fs.mkdir('./File', (err) => {
         console.log(err.message);
     else {
         console.log('File Created');
-        fs.writeFile('./file/fs.txt'), 'Hoiiiii', (err) => {
-            if (err)
+        fs.writeFile('./file/fs.txt', 'Hoiiiii', (err) => {
+            if (err){
                 console.log(err.message)
-            else
+            }
+                
+            else{
                 console.log('File Written Successfully');
-        }
+            }
+                
+        })
 
     }
-
-
 })
 
 
