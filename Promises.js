@@ -10,21 +10,28 @@ const cleanAss = () => {
             console.log("Cleaned ASS !!")
             resolve();
         }, 3000)
-        
+
 
     })
 }
 
-cleanAss()
+
 
 
 const wipeIt = (hasWater) => {
-    return new Promise((resolve , reject) => {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if(hasWater)
-                resolve("Wiped ASS !!");
-            elif(!hasWater) 
-                reject("No h20 !")
-        }, 2000);
+            hasWater = 1;
+            if (hasWater) {
+                console.log("Wiped ASS !!")
+                resolve();
+            }
+            else {
+                console.log("No h20 !!")
+                reject()
+            }
+        }, 4000);
     })
 }
+cleanAss()
+wipeIt()
