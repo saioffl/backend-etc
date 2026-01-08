@@ -16,10 +16,10 @@ if (!fs.existsSync('./File')) {
                     console.log('File Written Successfully');
                 }
 
-            })
+            });
 
         }
-    })
+    });
 }
 else {
     console.log("Folder Exists");
