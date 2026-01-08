@@ -9,7 +9,7 @@ if (!fs.existsSync('./File')) {
             console.log('File Created');
             fs.writeFile('./file/fs.txt', 'Hoiiiii', (err) => {
                 if (err) {
-                    console.log(err.message)
+                    console.log(err.message);
                 }
 
                 else {
@@ -22,7 +22,7 @@ if (!fs.existsSync('./File')) {
     })
 }
 else {
-    console.log("Folder Exists")
+    console.log("Folder Exists");
 }
 
 
