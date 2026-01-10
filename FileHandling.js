@@ -24,9 +24,3 @@ if (!fs.existsSync('./File')) {
 else {
     console.log("Folder Exists");
 }
-
-
-
-
-
-
