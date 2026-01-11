@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial</title>
+</head>
+
+<style>
+    body {
+        height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        background-color: black;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .secnd {
+        background-color: blue;
+        position: relative;
+        top: 10rem;
+        left: 10rem;
+        height: 10rem;
+        width: 10rem;
+    }
+
+
+    .Smain {
+        background-color: rgb(255, 213, 27);
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .Ssecnd {
+        background-color: blue;
+        position: relative;
+        top: -10rem;
+        left: -10rem;
+        height: 10rem;
+        width: 10rem;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="secnd">
+
+        </div>
+    </div>
+    <div class="Smain">
+        <div class="Ssecnd">
+
+        </div>
+    </div>
+</body>
+
+<script>
+    const blue = document.querySelector('.main')
+    const changeCol = () => {
+        addEventListener(onclick, () => {
+            blue.style.color = 'red';
+        })
+    }
+
+</script>
+
+</html>
