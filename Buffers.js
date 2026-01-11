@@ -4,5 +4,4 @@
 
 const buf = Buffer.alloc(5) ;
 buf.write("Hello")
-
-console.log(buf.toString()) ;55
+console.log(buf.toString()) ;
