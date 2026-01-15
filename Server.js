@@ -5,6 +5,8 @@ const server = http.createServer((req, res) => {
     console.log(req.url)
     console.log(req.method)
 
+    req.headers('content-type' , 'plain/text');
+
 
 })
 
