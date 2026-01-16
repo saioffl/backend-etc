@@ -5,8 +5,6 @@
 // Loopholes :
 //  check whether it already exists or not , if not then create a folder or else display : already exists !! 
 
-
-
 const http = require('http')
 const fs = require('fs')
 
@@ -21,5 +19,6 @@ if (!fs.existsSync('File', (err) => {
 
     })
 }))
+
 
 server.listen('3000', 'localhost')
