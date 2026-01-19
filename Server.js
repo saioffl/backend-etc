@@ -19,6 +19,4 @@ if (!fs.existsSync('File', (err) => {
 
     })
 }))
-
-
 server.listen('3000', 'localhost')
