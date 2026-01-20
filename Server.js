@@ -3,8 +3,7 @@
 // display it in localhost:3000/home
 
 // Loopholes :
-//  check whether it already exists or not , if not then create a folder or else display : already exists !! 
-
+//  check whether it already exists or not , if not then create a folder or else display : already exists !!
 const http = require('http')
 const fs = require('fs')
 
