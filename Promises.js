@@ -15,13 +15,6 @@ const cleanAss = () => {
     })
 }
 
-int numOne = 1 ;
-float havaChut = 1.32 ;
-
-String onlyInt = numOne + havaChut ;
-System.out.println(onlyInt)
-
-
 const wipeIt = (hasWater) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
