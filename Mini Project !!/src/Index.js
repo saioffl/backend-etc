@@ -7,19 +7,19 @@ const path = require('path');
 const server = http.createServer((req, res) => {
     console.log(req.url);
 
-    if (res.url == '/index') {
-        res.statusCode = 500;
-        res.setHeader('Location', 'index.html')
+    if (req.url == '/index') {
+        res.statusCode = 302;
+        res.setHeader('Location', '/index.html')
         res.end()
         return
     }
 
-    if (res.url == '/index.html') {
+    if (req.url == '/index.html') {
         const filepath = path.join(__dirname, 'index.html')
 
         fs.readFile(filepath, (err, data) => {
             if (err) {
-                res.statusCode = 302;
+                res.statusCode = 500;
                 res.end('Error Loading Page')
                 console.log(err.message)
 
