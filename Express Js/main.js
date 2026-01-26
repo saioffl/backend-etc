@@ -1,7 +1,9 @@
 const exp = require('express');
 
 const app = exp()
-app.listen(3000)
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
+})
 app.get('/' , (req,res) =>{
-    res.sendFile('./Express Js/index.html' , {root:__dirname});
+    res.sendFile('index.html' , {root:__dirname});
 })
