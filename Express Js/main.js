@@ -1,12 +1,10 @@
-const exp = require('express');
+const express = require('express') ;
+const app = express(); // Express Init ! 
 
-const app = exp()
-app.listen(3000, () => {
-    console.log('Server running on port 3000');
-})
 app.get('/' , (req,res) =>{
-    res.sendFile('index.html' , {root:__dirname});
+    res.sendFile('/index.html', {root:__dirname})
 })
 
-
-app.
+app.listen(3000 , () => {
+    console.log('Server Running on Port 3000 : localHost');
+})
