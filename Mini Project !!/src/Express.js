@@ -15,3 +15,7 @@ app.get('/home', (req, res) => {
 app.listen(3000, () => {
     console.log('Server Running @ https://localhost:3000');
 })
+
+app.use('/homeUS', (res,req) =>{
+    console.log('Not Found !!')
+})
