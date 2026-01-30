@@ -7,6 +7,7 @@ const userNames = [
     {id:2 , stdName:'Naga'},
     {id:3 , stdName:'Bubu'}
 ] 
+
 app.get('/' , (req,res) =>{
     console.log('Entered World !')
     res.sendFile('/index.html' , {root:__dirname}) ;
@@ -17,6 +18,9 @@ app.get('/home', (req, res) => {
     res.sendFile('/home.html', { root: __dirname })
 })
 
+app.get('/students', (req, res) => {
+    res.send(userNames)
+})
 
 
 app.use(exp.json())
