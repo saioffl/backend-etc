@@ -22,6 +22,13 @@ app.get('/students', (req, res) => {
     res.send(userNames)
 })
 
+app.get('/students/:id', (req, res) => {
+    
+    const id = Number(req.params.id)
+    const user = userNames.find((user)=> user.id === id)
+    console.log(user)
+    res.send(user)
+})
 
 app.use(exp.json())
 
