@@ -31,11 +31,9 @@ app.get('/students/:id', (req, res) => {
 })
 
 app.use(exp.json())
-
 app.listen(3000, () => {
     console.log('Server Running @ https://localhost:3000');
 })
-
 app.use('/homeUS', (res,req) =>{
     console.log('Not Found !!')
 })
