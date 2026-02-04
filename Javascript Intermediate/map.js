@@ -10,6 +10,8 @@ app.get('/students/:id', (req, res) => {
         res.status(404).send('Student Not Found')
     }
     res.json(student)
+
+    
 })
 
 const stdArray = [
