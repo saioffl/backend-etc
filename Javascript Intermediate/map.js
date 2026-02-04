@@ -22,7 +22,7 @@ app.get('/stdArray/:id', (req, res) => {
     const student = stdArray.find((std) => std.id === id);
     console.log(student)
 
-    if(!student){
+    if (!student) {
         return res.status(404).send('Student Not Found')
     }
 
@@ -31,10 +31,10 @@ app.get('/stdArray/:id', (req, res) => {
 })
 
 
-app.get('/stdArray' , (req,res)=>{ // ?filter=1&name=Sai
-    console.log(req.query);
-})
-
+app.get('/stdArray', (req, res) => {
+    console.log(req.query); // shows query object
+    res.json(req.query);
+});
 
 app.listen(3000, () => {
     console.log('Server Running on Port 3000 : localHost');
