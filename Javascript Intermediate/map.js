@@ -1,18 +1,6 @@
 const express = require('express');
 const app = express(); // Express Init ! 
 const json = express.json
-app.get('/students/:id', (req, res) => {
-    const id = Number(req.params.id);
-    const student = stdArray.find((std) => std.id === id);
-    console.log(student)
-
-    if(!student){
-        res.status(404).send('Student Not Found')
-    }
-    res.json(student)
-
-    
-})
 
 const stdArray = [
     {
@@ -22,6 +10,20 @@ const stdArray = [
         id: 2, Name: 'Naga'
     }
 ]
+
+app.get('/stdArray/:id', (req, res) => {
+    const id = Number(req.params.id);
+    const student = stdArray.find((std) => std.id === id);
+    console.log(student)
+
+    if(!student){
+        res.status(404).send('Student Not Found')
+    }
+    res.json(student)
+
+
+})
+
 
 
 
