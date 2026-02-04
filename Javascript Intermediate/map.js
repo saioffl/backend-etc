@@ -13,7 +13,7 @@ const stdArray = [
 
 
 app.get('/stdArray/', (req, res) => {
-    res.json(student)
+    res.json(stdArray)
 })
 
 
@@ -27,7 +27,6 @@ app.get('/stdArray/:id', (req, res) => {
     }
 
     res.json(student)
-
 
 })
 
