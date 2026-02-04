@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express(); // Express Init ! 
-const json = express.json
+
 
 const stdArray = [
     {
@@ -17,14 +17,13 @@ app.get('/stdArray/:id', (req, res) => {
     console.log(student)
 
     if(!student){
-        res.status(404).send('Student Not Found')
+        return res.status(404).send('Student Not Found')
     }
+
     res.json(student)
 
 
 })
-
-
 
 
 app.listen(3000, () => {
