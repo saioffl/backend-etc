@@ -31,6 +31,11 @@ app.get('/stdArray/:id', (req, res) => {
 })
 
 
+app.get('/stdArray' , (req,res)=>{ // ?filter=1&name=Sai
+    console.log(req.query);
+})
+
+
 app.listen(3000, () => {
     console.log('Server Running on Port 3000 : localHost');
 })
