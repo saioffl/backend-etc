@@ -17,6 +17,8 @@ app.get('/stdArray/', (req, res) => {
 })
 
 
+
+
 app.get('/stdArray/:id', (req, res) => {
     const id = Number(req.params.id);
     const student = stdArray.find((std) => std.id === id);
