@@ -1,8 +1,6 @@
 const express = require('express');
 const app = express(); // Express Init ! 
 
-
-
 const stdArray = [
     {
         id: 1, Name: 'Sai'
@@ -12,13 +10,9 @@ const stdArray = [
     }
 ]
 
-
-
 app.get('/stdArray/', (req, res) => {
     res.json(stdArray)
 })
-
-
 
 
 app.get('/stdArray/:id', (req, res) => {
