@@ -3,7 +3,6 @@
 // Flush it 
 // Use Promise !
 
-
 const cleanAss = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -14,7 +13,6 @@ const cleanAss = () => {
 
     })
 }
-
 const wipeIt = (hasWater) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
