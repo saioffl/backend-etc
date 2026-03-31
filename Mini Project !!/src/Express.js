@@ -11,12 +11,13 @@ const userNames = [
 ] 
 
 app.get('/' , (req,res) =>{
-    
+
     console.log('Entered World !')
     res.sendFile('/index.html' , {root:__dirname}) ;
 })
 
 app.get('/home', (req, res) => {
+
     console.log('Home Page !!')
     res.sendFile('/home.html', { root: __dirname })
 })
