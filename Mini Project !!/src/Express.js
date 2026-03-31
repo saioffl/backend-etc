@@ -4,11 +4,14 @@ const app = exp();
 
 const userNames = [
     {id:1 , stdName:'Sai'},
+
     {id:2 , stdName:'Naga'},
+    
     {id:3 , stdName:'Bubu'}
 ] 
 
 app.get('/' , (req,res) =>{
+    
     console.log('Entered World !')
     res.sendFile('/index.html' , {root:__dirname}) ;
 })
